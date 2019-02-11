@@ -2,22 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Добро пожаловать в Седону</title>
   </head>
   <body>
   	<header class="main-header">
-  		<div class="main-logo">
+  		<nav class="main-navigation">
   			<img src="img/logo.svg" width="140" height="72" alt="Логотип в меню">
-  		</div>
-  		
-  				
+  		  				
   		<ul class="main-menu">
   			<li><a href="info.html">Информация</a></li>
   			<li><a href="media.html">Фото и видео</a></li>
   			<li><a href="map.html">Карта штата</a></li>
   			<li><a href="hotels.html">Гостиницы</a></li>	
   		</ul>
+
+  		</nav>
+
+
 
   		<p>
   			<img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
@@ -26,58 +30,70 @@
 
   	<main class="container">
   		<h1 class="visually-hidden">Гостиницы в Седоне</h1>
-  		<p class="discription">Седона - небольшой городок в Аризоне,
+  		<p class="discription">Седона - небольшой городок в Аризоне,<br>
   		заслуживающий большего!</p>
+  		  		
+  		<p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-  		<section class="advantages">
-  			<h2 class="visually-hidden">Преимущество Седоны</h2>
-  			<p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+		<section class="advantages">
 
-  			<ul>
-  				<li>
-  					<img src="img/little-city.jpg" width="800" height="256" alt="Настоящий городок">
+			<h2 class="visually-hidden">Преимущество Седоны</h2>
+  			
+  			<ul class="five-reasons-list">
+  				<div class="blue-fone">
+  				<li class="reason-item">
+  					<img src="img/little-city.jpg" id="little-city" width="800" height="256" alt="Настоящий городок">
+
   					<h3>Настоящий городок</h3>
   					<p>-№1-</p>
-  					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-
-  					<ul>
-  						<li>
-  							<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
-  							<h4>Жилье</h4>
-  							<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-  						</li>
-  						<li>
-  							<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
-  							<h4>Еда</h4>
-  							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-  						</li>
-  						<li>
-  							<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
-  							<h4>Сувениры</h4>
-  							<p>Не только китайского, но и местного производства!</p>
-  						</li>
-  					</ul>
+  					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>	  					
   				</li>
+  				</div>
 
-				<li>
-					<img src="img/bridge-devil.jpg" width="800" height="256" alt="Мост дьявола">
-  					<h3>Там есть мост дьявола</h3>
+  				<div class="blue-fone">
+				<li class="reason-item">
+					<img src="img/bridge-devil.jpg" id="bridge-devil"width="800" height="256" alt="Мост дьявола">
+
+					<h3>Там есть мост дьявола</h3>
   					<p>-№2-</p>
-  					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p></li>
-  				<li>
+  					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  					
+  				</li>
+  				</div>
+
+  				<li class="reason-item">
   					<h3>Небольшая площадь</h3>
   					<p>-№3-</p>
   					<p>Все достопримечательности находятся очень близко</p>
   				</li>
-  				<li>
+
+  				<li class="reason-item">
   					<h3>Красивая дорога</h3>
   					<p>-№4-</p>
   					<p>Ехать в Седону из Лас-Вегаса совсемне скучно!</p>
   				</li>
-  				<li>
+
+  				<li class="reason-item">
   					<h3>Мало туристов</h3>
   					<p>-№5-</p>
   					<p>Большинство едет в гранд каньон и толпится там</p>
+  				</li>
+
+  			</ul>
+  			<ul class="in-city">
+  				<li>
+  					<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+  					<h4>Жилье</h4>
+  					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+  				</li>
+  				<li>
+  					<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+  					<h4>Еда</h4>
+  					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+  				</li>
+  				<li>
+  					<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+  					<h4>Сувениры</h4>
+  					<p>Не только китайского, но и местного производства!</p>
   				</li>
   			</ul>
   		</section>
@@ -85,35 +101,44 @@
   		<section class="question">
   			<h2>Заинтересовались?</h2>
   			<p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+  			<button>Поиск гостиницы в Седоне</button>
   		</section>
 
-  		<section class="search">
-  			<p class="search-title">Поиск гостиницы в Седоне</p>
-  			<form>
+  		
+  			
+  			<form class="hidden-form">
 
+  				<p class="hidden-item">
   				<label for="date">Дата заезда:</label>
-  				<input type="date" rows="" cols="" name="date" id="date" value="24 апреля 2017">
+  				
+  				<input type="text" rows="" cols="" name="date" id="date" value="24 апреля 2017">
+				</p>
 
-  				<br>
-
+  				
+				<p class="hidden-item">
   				<label for="date-out">Дата выезда:</label>
-  				<input type="date" rows="" cols="" name="date-out" id="date-out" value="27.04.2017">
+  				<input type="text" rows="" cols="" name="date-out" id="date-out" value="4 июля 2017">
+  				</p>
 
-  				<br>
-
+  				<p class="hidden-item">
   				<label for="adult">Взрослые:</label>
   				<input type="number" min="0" max="10" rows="" cols="" name="adult" id="adult" value="1">
+  				</p>
 
+
+				<p class="hidden-item">
   				<label for="children">Дети:</label>
   				<input type="number" min="0" max="10" rows="" cols="" name="children" id="children" value="0">
+  				</p>
 
-  				<br>
-
+  				<p class="hidden-item">
   				<input type="submit" rows="" cols="" name="find" id="find" value="Найти">
+  				</p>
   				
   			</form>
   			
-  		</section>
+  		
   		
   	</main>
 
@@ -125,17 +150,17 @@
   		<ul class="footer-social">
   			<li class="button-social">
   				<a href="#">
-  				<img src="img/twitter.svg" width="46" height="48" alt="Twitter">  				 	
+  				<img src="img/twitter.png" width="46" height="48" alt="Twitter">  				 	
   			    </a>
   			</li>
   			<li class="button-social">
   				<a href="#">
-  				<img src="img/facebook.svg" width="46" height="48" alt="Facebook">  			 
+  				<img src="img/facebook.png" width="46" height="48" alt="Facebook">  			 
   			    </a>
   			</li>
   			<li class="button-social">
   				<a href="#">
-  				<img src="img/youtube.svg" width="46" height="48" alt="Youtube">  				 	
+  				<img src="img/youtube.png" width="46" height="48" alt="Youtube">  				 	
   			    </a>
   			</li>
   		</ul>
@@ -143,7 +168,7 @@
   		<p class="footer-copyright">
   			Website by 
   			<a href="https://htmlacademy.ru/intensive/htmlcss">
-  			<img src="img/logo-name.svg" width="115" height="41" alt="Html academy">
+  			<img src="img/logo_name.svg" width="115" height="41" alt="Html academy">
   			</a>
   		</p>
 

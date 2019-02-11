@@ -1,15 +1,217 @@
+/*-----Общие настройки------*/
 body {
-	width: 1200px;
+	margin:0;	
+	padding: 0;
+
+	
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+
 }
 
-.main-header {
-	width: 1200px;
-	height: 580px;
+a {
+	text-decoration: none;
+}
 
-	background:
-	url("img/polygon.png") no-repeat 0 100%,
-	url("img/background-welcome.jpg");
+/*--------Основное меню - хэдэр-----------*/
+	
+	
+.main-navigation { 
+	font-size: 14px;
+	line-height: 26px; /*Настройка тэга nav*/
+	font-weight: 700;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.main-menu {
+	list-style: none; /*Убираем маркеры у списка*/
+}
+
+.main-menu a {
+	color: #000000; /* Меняем цвет ссылки*/
+}
+
+.main-menu a:hover,
+.main-menu a:focus { /*Настройка фокуса и наведения*/
+	color: #81b3d2;
+}
+
+.main-menu a:active { /*Настройка нажатия*/
+	color: #b2b2b2;
 }
 
 
+
+/*---------Основной контент------------------*/
+
+
+		/*______Преимущества______*/
+
+.five-reasons-list {
+	list-style: none;
+}
+
+.in-city {
+	list-style: none;
+}
+
+.reason-item {
+	text-align: center;
+}
+
+.reason-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.blue-fone {
+	width: 1200px;
+	height: 256px;
+	background-color: #81b3d2;
+
+	color: #ffffff;
+}
+
+#little-city {
+	float: right;
+}
+
+#bridge-devil {
+	float: left;
+}
+
+		/*____Поиск гостиницы____*/
+
+.question button {
+	width: 568px;
+	height: 86px;
+
+	background-color: #766357;
+	border: none;
+
+	font: inherit;
+
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.question button:hover,
+.question button:focus {
+	background-color: #604e43;
+}
+
+.question button:active {
+	background-color: #503e33;
+	color: #7e7169;
+}
+
+		/*_____Скрытая форма бронирования_____*/
+
+.hidden-form {
+	font: inherit;
+
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+
+	color: #000000;
+}
+
+.hidden-item input {
+	width: 346px;
+	height: 38px;
+
+	font: inherit;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+	background-color: #f2f2f2;
+	color: #000000;
+	border: none;
+}
+
+.hidden-item input:hover {
+	background-color: #ebebeb;
+}
+
+.hidden-item input:focus {
+	width: 342px;
+	height: 34px;
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.main-footer {
+	width: 1200px;
+	height: 593px;
+
+	background: url("img/map.jpg") no-repeat 50% 50%;
+	background-color: #ffffff;
+}
+
+.footer-bottom {
+	display: block;	
+	width: 1200px;
+	height: 120px;
+	padding: 0;
+
+	
+	position: relative;
+	top: 473px;
+
+	
+	color: #000000;
+
+	background-color: rgba(253, 253, 253, 0.9);
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+	display: inline-block;
+	width: 397px;
+	height: 100px;
+	
+	padding: 0;
+	margin: 0;
+
+	text-align: center;
+	vertical-align: middle;
+	
+	
+}
+
+.footer-hashtag {
+	font: inherit;
+	
+	font-size: 21px;
+	font-weight: 700;
+}
+
+	
+
+
+.footer-social {	
+	list-style: none;
+}
+
+.button-social {
+	display: inline-block;
+}
 
