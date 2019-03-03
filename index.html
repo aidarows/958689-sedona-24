@@ -7,30 +7,43 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Добро пожаловать в Седону</title>
   </head>
+  
   <body>
   	<header class="main-header">
+
   		<nav class="main-navigation">
-  			<img src="img/logo.svg" width="140" height="72" alt="Логотип в меню">
+  			
   		  				
-  		<ul class="main-menu">
+  		<ul class="main-menu clearfix">
   			<li><a href="info.html">Информация</a></li>
   			<li><a href="media.html">Фото и видео</a></li>
+  			<li><a href="map.html">Карта штата</a></li>
+  			<li><a href="hotels.html">Гостиницы</a></li>
+  			<li><img src="img/logo.svg" width="140" height="72" alt="Логотип в меню"></li>
+  		</ul>
+
+  		</nav> 
+  		<!-- <nav class="main-navigation">
+  			
+  		  				
+  		<ul class="main-menu clearfix">
+  			<li><a href="info.html">Информация</a></li>
+  			<li><a href="media.html">Фото и видео</a></li>
+  			<li><img src="img/logo.svg" width="140" height="72" alt="Логотип в меню"></li>
   			<li><a href="map.html">Карта штата</a></li>
   			<li><a href="hotels.html">Гостиницы</a></li>	
   		</ul>
 
-  		</nav>
+  		</nav> -->
 
-
-
-  		<p>
+  		<div class="fon">
   			<img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-  		</p>
+  		</div>
   	</header>
 
   	<main class="container">
-  		<h1 class="visually-hidden">Гостиницы в Седоне</h1>
-  		<p class="discription">Седона - небольшой городок в Аризоне,<br>
+  		<h1 class="visually-hidden" aria-label="Гостиницы в Седоне">Гостиницы в Седоне</h1>
+  		<p class="discription">Седона — небольшой городок в Аризоне,<br>
   		заслуживающий большего!</p>
   		  		
   		<p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -41,76 +54,90 @@
   			
   			<ul class="five-reasons-list">
   				<li class="reason-item">
-  					<div class="blue-fone">
-  					<img src="img/little-city.jpg" id="little-city" width="800" height="256" alt="Настоящий городок">
-
-  					<h3>Настоящий городок</h3>
-  					<p>-№1-</p>
-  					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-  					</div>	  					
+  					<div class="blue-fone blue-left">
+  					
+  					<h3>Настоящий <br>городок</h3>
+  					<span>— №1 —</span>
+  					<p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+  					</div>
+  					<img src="img/little-city.jpg" id="little-city" width="800" height="256" alt="Настоящий городок">	  					
   				</li>
   				
 
   				
 				<li class="reason-item">
-					<div class="blue-fone">
+					
 					<img src="img/bridge-devil.jpg" id="bridge-devil" width="800" height="256" alt="Мост дьявола">
 
-					<h3>Там есть мост дьявола</h3>
-  					<p>-№2-</p>
-  					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p> 
+					<div class="blue-fone blue-right ">
+
+					<h3>Там есть<br> мост дьявола</h3>
+  					<span>— №2 —</span>
+  					<p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p> 
   					</div> 					
   				</li>
   				
-
-  				<li class="reason-item">
-  					<h3>Небольшая площадь</h3>
-  					<p>-№3-</p>
-  					<p>Все достопримечательности находятся очень близко</p>
+  				<div class="reason-item">
+  				<li class="grey-box">
+  					<h3>Небольшая<br> площадь</h3>
+  					<span>— №3 —</span>
+  					<p>Все достопримечательности<br> находятся очень близко</p>
   				</li>
 
-  				<li class="reason-item">
-  					<h3>Красивая дорога</h3>
-  					<p>-№4-</p>
-  					<p>Ехать в Седону из Лас-Вегаса совсемне скучно!</p>
+  				<li class="grey-box">
+  					<h3>Красивая<br> дорога</h3>
+  					<span>— №4 —</span>
+  					<p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
   				</li>
 
-  				<li class="reason-item">
-  					<h3>Мало туристов</h3>
-  					<p>-№5-</p>
-  					<p>Большинство едет в гранд каньон и толпится там</p>
+  				<li class="grey-box">
+  					<h3>Мало<br> туристов</h3>
+  					<span>— №5 —</span>
+  					<p>Большинство едет в гранд каньон<br> и толпится там</p>
   				</li>
+  				</div>
+  				
+  				<li class="reason-item">
 
-  			</ul>
-  			<ul class="in-city">
-  				<li>
+  				<ul class="in-city">
+  				<li class="in-city-item">
   					<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
   					<h4>Жилье</h4>
-  					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+  					<p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
   				</li>
-  				<li>
+  				<li class="in-city-item">
   					<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
   					<h4>Еда</h4>
-  					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+  					<p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
   				</li>
-  				<li>
+  				<li class="in-city-item">
   					<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
   					<h4>Сувениры</h4>
-  					<p>Не только китайского, но и местного производства!</p>
+  					<p>Не только китайского, но и местного<br> производства!</p>
   				</li>
-  			</ul>
+  				</ul> 
+
+  				</ul>
+  			
+  			
   		</section>
 
   		<section class="question">
   			<h2>Заинтересовались?</h2>
-  			<p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  			<p> Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
   			<button>Поиск гостиницы в Седоне</button>
   		</section>
 
   		
   			
-  			<form class="hidden-form">
+  			
+  		
+  		
+  	</main>
+
+  	<footer class="main-footer">
+		<form class="hidden-form">
 
   				<p class="hidden-item">
   				<label for="date">Дата заезда:</label>
@@ -140,15 +167,12 @@
   				</p>
   				
   			</form>
-  			
-  		
-  		
-  	</main>
 
-  	<footer class="main-footer">
+
+
   		<div class="footer-bottom">
 
-  		<p class="footer-hashtag">#visitsedona</p>
+  		<div class="footer-hashtag">#visitsedona</div>
 
   		<ul class="footer-social">
   			<li class="button-social">
@@ -168,14 +192,17 @@
   			</li>
   		</ul>
 
-  		<p class="footer-copyright">
-  			Website by 
+  		<div class="footer-copyright">
+  			Website by
   			<a href="https://htmlacademy.ru/intensive/htmlcss">
   			<img src="img/logo_name.svg" width="115" height="41" alt="Html academy">
   			</a>
-  		</p>
+  		</div>
 
   		</div>
+
+
+  			
   	</footer>
   </body>
 </html>

@@ -1,5 +1,7 @@
 /*-----Общие настройки------*/
 body {
+	width: 1200px;
+
 	margin:0;	
 	padding: 0;
 
@@ -19,22 +21,106 @@ a {
 	text-decoration: none;
 }
 
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 /*--------Основное меню - хэдэр-----------*/
-	
+
+.main-header {
+	text-align: center;
+}
+
+
 	
 .main-navigation { 
 	font-size: 14px;
 	line-height: 26px; /*Настройка тэга nav*/
 	font-weight: 700;
 	color: #000000;
-
+	
+	
 	background-color: #ffffff;
 }
 
-.main-menu {
-	list-style: none; /*Убираем маркеры у списка*/
+.main-menu  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	list-style: none;
+
+	width: 1200px;
+	height: 56px;
+
+	background-color: #ffffff;
+
+	padding: 0;
+	margin: 0;
+
+}
+.main-menu li {
+	width: 240px;
+
 }
 
+.main-menu li:nth-child(5) {
+	position: relative;
+	top: 11px;
+	order: 3;
+}
+
+.main-menu li:nth-child(1) {
+	order: 1;
+}
+
+.main-menu li:nth-child(2) {
+	order: 2;
+}
+
+.main-menu li:nth-child(3) {
+	order: 4;
+}
+
+.main-menu li:nth-child(4) {
+	order: 5;
+}
+
+
+
+
+
+/*.main-menu {
+	list-style: none; /*Убираем маркеры у списка*
+	padding: 0;
+}
+
+.main-menu li {
+	box-sizing: border-box;
+	padding-top: 14px;
+	float: left;
+	width: 239px;
+	height: 56px;
+}
+
+.main-menu li:nth-child(3) {
+	width: 244px;
+	padding-top: 0px;
+}
+*/
 .main-menu a {
 	color: #000000; /* Меняем цвет ссылки*/
 }
@@ -48,6 +134,14 @@ a {
 	color: #b2b2b2;
 }
 
+.fon {
+	min-height: 433px;
+	padding-top: 76px;
+	background: 
+	url(img/polygon.png) 0 100% no-repeat,
+	url(img/background-welcome.jpg) 50% -56px no-repeat;
+}
+
 
 
 /*---------Основной контент------------------*/
@@ -55,40 +149,181 @@ a {
 
 		/*______Преимущества______*/
 
-.five-reasons-list {
-	list-style: none;
+.discription {
+	margin-top: 59px;
+	text-align: center;
+
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+
+	color: #000000;
 }
 
-.in-city {
-	list-style: none;
+.five-reasons {
+	margin-top: 27px;
+	margin-bottom: 50px;
+	text-align: center;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+
+	color: #000000;
 }
+
+.advantages {
+	width: 1200px;
+
+	text-align: center;
+
+}
+
+.five-reasons-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
 
 .reason-item {
-	text-align: center;
+	width: 1200px;
+	height: 256px;
+	margin-bottom: 20px;
+}
+
+.reason-item:nth-child(1) {
+	order: 1;
+	margin-bottom: 56px;
+}
+.reason-item:nth-child(2) {
+	margin-bottom: 0;
+	order: 3;
+}
+.reason-item:nth-child(3) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 1200px;
+	height: 256px;
+	background-color: #eeeeee;
+
+	order: 4;
+
+}
+
+.reason-item:nth-child(4) {
+	order: 2;
+	margin-bottom: 19px; 
 }
 
 .reason-item h3 {
+	margin-top: 50px;
 	font-size: 21px;
 	line-height: 21px;
 }
 
 .blue-fone {
-	width: 1200px;
+	width: 400px;
 	height: 256px;
+
+	box-sizing: border-box;
 	background-color: #81b3d2;
 
 	color: #ffffff;
 }
 
-#little-city {
-	float: right;
-}
-
-#bridge-devil {
+.blue-left {
 	float: left;
 }
 
+.blue-right {
+	float: right;
+}
+.blue-fone p {
+	margin-top: 20px;
+}
+
+.in-city {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+
+	list-style: none;
+	width: 1200px;
+	height: 256px;
+
+	padding: 0;
+	margin: 0;
+}
+
+.in-city-item {
+	width: 400px;
+	height: 256px;
+}
+
+.in-city-item h4 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+	margin: 24px;
+	
+		
+}
+.in-city-item p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	
+}
+
+.grey-box {
+	width: 400px;
+	height: 256px;
+}
+
+.grey-box h3 {
+	margin-top: 47px;
+	margin-bottom: 24px;
+}
+
+.grey-box p {
+	margin-top: 21px;
+}
+
+
+
+
+
+
 		/*____Поиск гостиницы____*/
+
+.question {
+	text-align: center;
+}
+
+.question h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	margin-top: 30px;
+}
+
+.question p {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 46px;
+}
+
 
 .question button {
 	width: 568px;
@@ -157,24 +392,45 @@ a {
 	border: 2px solid #e5e5e5;
 }
 
+
+/*--------ПОДВАЛ-----------*/
+
 .main-footer {
 	width: 1200px;
 	height: 593px;
 
 	background: url("img/map.jpg") no-repeat 50% 50%;
 	background-color: #ffffff;
+
 }
 
+.hidden-form {
+	width: 568px;
+	height: 395px;
+	background-color: #ffffff;
+	
+	position: absolute;
+	left: 316px;
+	text-align: center;
+
+	padding-top: 1px;
+
+}
+
+
+
 .footer-bottom {
-	display: block;	
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
 	width: 1200px;
 	height: 120px;
 	padding: 0;
-
 	
 	position: relative;
 	top: 473px;
-
 	
 	color: #000000;
 
@@ -184,17 +440,13 @@ a {
 .footer-hashtag,
 .footer-social,
 .footer-copyright {
-	display: inline-block;
-	width: 397px;
-	height: 100px;
+	width: 400px;
+	height: 50px;
 	
 	padding: 0;
-	margin: 0;
+	margin:0;
 
 	text-align: center;
-	vertical-align: middle;
-	
-	
 }
 
 .footer-hashtag {
@@ -202,10 +454,9 @@ a {
 	
 	font-size: 21px;
 	font-weight: 700;
+
+	padding-top: 26px;
 }
-
-	
-
 
 .footer-social {	
 	list-style: none;
@@ -215,3 +466,86 @@ a {
 	display: inline-block;
 }
 
+
+
+/*______Стилизация для hotels.html_____________*/
+
+.main-footer-hotels {
+	width: 1200px;
+	height: 120px;
+}
+
+.footer-bottom-hotels {
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 1200px;
+	height: 120px;
+	padding: 0;
+	
+	color: #000000;
+
+	background-color: rgba(253, 253, 253, 0.9);
+}
+
+
+.result {
+	width: 1200px;
+	height: 96px;
+	text-align: center;
+	margin: auto;
+}
+
+.sort {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width:1200px;
+	height: 216px;
+
+	background: url("img/filter.jpg") no-repeat 50% 50%;
+}
+
+.hostel-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+
+	width:1200px;
+	height: 450px;
+}
+
+.hostel-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	width: 1200px;
+	height: 150px;
+
+}
+
+.hostel-item img {
+	float: left;
+
+}
+
+.left-box {
+	width: 500px;
+}
+
+.right-box {
+	width: 300px;
+
+}

@@ -2,59 +2,86 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Гостиницы в Седону</title>
   </head>
   
   <body>
-  	<header class="hotel-header">
+  	<header class="main-header">
 
-      <div class="main-logo">
-        <a href="index.html">
-        <img src="img/logo.svg" width="140" height="72" alt="Логотип в меню">
-        </a>
-      </div>
-      
-          
-      <ul class="main-menu">
+      <nav class="main-navigation">
+        
+                
+      <ul class="main-menu clearfix">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+        <li><img src="img/logo.svg" width="140" height="72" alt="Логотип в меню"></li>
+      </ul>
+
+      </nav> 
+      <!-- <nav class="main-navigation">
+        
+                
+      <ul class="main-menu clearfix">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="media.html">Фото и видео</a></li>
+        <li><img src="img/logo.svg" width="140" height="72" alt="Логотип в меню"></li>
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>  
       </ul>
 
-  	</header>
+      </nav> -->
+      
+    </header>
 
     <main class="hostels">
       <h1 class="visually-hidden">Поиск гостиниц</h1>
 
       <form class="sort">
 
+        <div class="sort-item">
         <p>Инфраструктура:</p>
         <input type="checkbox" checked>Бассейн
         <input type="checkbox">Парковка
         <input type="checkbox">Wi-fi
+        </div>
 
+        <div class="sort-item">
         <p>Тип жилья:</p>
         <input type="checkbox" checked>Гостиница
         <input type="checkbox" checked>Мотель
         <input type="checkbox" checked>Аппартаменты
-
+        </div>
+        
+        <div class="sort-item">
         <p>
         <label for="price">Стоимость в сутки(р):</label><br>
         <input type="range" name="price" id="price" min="0" max="3000">
         </p>
+        
 
         <input type="submit" name="btn" value="Показать">
-        
+        </div>
       </form>
       
       <section class="search">
 
+        <div class="result">
+          Найдено: 3
+          Сортировка:
+          <span>По цене</span>
+          <span>По типу</span>
+          <span>По рейтингу</span>
+        </div>
         <ul class="hostel-list">
 
           <li class="hostel-item">
-
+            
+            <div class="left-box">
             <a href="#">
             <img src="img/pic-1.jpg" width="135" height="90" alt="Amara resort & Spa">
             </a>
@@ -64,32 +91,53 @@
             <p>от 4000 р</p>
             <a href="#" class="hostel-btn">Подробнее</a>
             <a href="#" class="hostel-btn">Забронировать</a>
-            <span>Рейтинг: 8.5</span>      
+            </div>
+           
+            <div class="right-box">
+
+            <span>Рейтинг: 8.5</span>    
+            </div>  
 
           </li>
 
           <li class="hostel-item">
-            <h2><a href="#">Desert quail inn</a></h2>
+
+            <div class="left-box">
+            
             <a href="#">
             <img src="img/pic-2.jpg" width="135" height="90" alt="Desert quail inn">
             </a>
+            <h2><a href="#">Desert quail inn</a></h2>
             <p>Мотель</p>
             <p>от 3000 р</p>
             <a href="#" class="hostel-button">Подробнее</a>
             <a href="#" class="hostel-button">Забронировать</a>
-            <span>Рейтинг: 8.9</span>      
+            </div>
+
+            <div class="right-box">
+            <span>Рейтинг: 8.9</span>   
+            </div> 
+
+
           </li>
 
           <li class="hostel-item">
-            <h2><a href="#">Villas at poco diablo</a></h2>
+
+            <div class="left-box">
             <a href="#">
             <img src="img/pic-3.jpg" width="135" height="90" alt="Villas at poco diabl">
             </a>
+            <h2><a href="#">Villas at poco diablo</a></h2>
             <p>Апартаменты</p>
             <p>от 2000 р</p>
             <a href="#" class="hostel-button">Подробнее</a>
             <a href="#" class="hostel-button">Забронировать</a>
-            <span>Рейтинг: 9.2</span>      
+            </div>
+
+            <div class="right-box">
+            <span>Рейтинг: 9.2</span>  
+            </div> 
+   
           </li>
 
        </ul>
@@ -97,37 +145,41 @@
       </section>
     </main>
 
-  	<footer class="main-footer">
-      <div class="footer-bottom">
+  	<footer class="main-footer-hotels">
+    
+      <div class="footer-bottom-hotels">
 
-      <p class="footer-hashtag">#visitsedona</p>
+        <div class="footer-hashtag">#visitsedona</div>
 
-      <ul class="footer-social">
+        <ul class="footer-social">
         <li class="button-social">
           <a href="#">
-          <img src="img/twitter.svg" width="46" height="48" alt="Twitter">            
+          <img src="img/twitter.png" width="46" height="48" alt="Twitter">            
             </a>
         </li>
         <li class="button-social">
           <a href="#">
-          <img src="img/facebook.svg" width="46" height="48" alt="Facebook">         
+          <img src="img/facebook.png" width="46" height="48" alt="Facebook">         
             </a>
         </li>
         <li class="button-social">
           <a href="#">
-          <img src="img/youtube.svg" width="46" height="48" alt="Youtube">            
+          <img src="img/youtube.png" width="46" height="48" alt="Youtube">            
             </a>
         </li>
-      </ul>
+        </ul>
 
-      <p class="footer-copyright">
-        Website by 
+        <div class="footer-copyright">
+        Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-name.svg" width="115" height="41" alt="Html academy">
+        <img src="img/logo_name.svg" width="115" height="41" alt="Html academy">
         </a>
-      </p>
+        </div>
 
       </div>
+
+
+        
     </footer>
   </body>
 </html>
